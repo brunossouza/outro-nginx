@@ -5,5 +5,5 @@ RUN apt-get update && \
 VOLUME ["/var/cache/nginx"]
 EXPOSE 80 443
 RUN echo "<h1>Curso Docker - outro nginx</h1>" | \
-    tee /usr/share/nginx/www/index.html
+    tee /usr/share/nginx/html/index.html
 CMD ["nginx", "-g", "daemon off;"]
